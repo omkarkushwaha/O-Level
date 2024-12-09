@@ -1,0 +1,164 @@
+/* General Reset */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #1b021f, #e1bee7); /* Soft Lavender Gradient */
+    text-align: center;
+    padding: 40px;
+    color:whitesmoke; /* Deep Purple Text */
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+/* Topic Section */
+.topic-section {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9); /* Soft Green Gradient */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.topic-section h2 {
+    font-size: 2.5rem;
+    color: #2e7d32; /* Deep Green Text */
+    margin-bottom: 30px;
+}
+
+.topic-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topic-card {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.topic-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.topic-card h3 {
+    font-size: 1.5rem;
+    color: #2e7d32; /* Deep Green Text */
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    display: inline-block;
+    background-color: #81c784; /* Light Green Accent */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.view-btn:hover {
+    background-color: #66bb6a; /* Slightly Darker Green */
+}
+
+/* contact Section */
+/* contact-styles.css */
+.contact-section {
+    background-color:#8FBC8B; /* Red background */
+    text-align: center;
+    padding: 40px;
+ }
+ 
+ .contact-section h2 {
+    color: #fff; /* Blue color for the heading */
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+ }
+ 
+ .contact-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto 0;
+ }
+ 
+ .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+ }
+ 
+ .contact-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 150px;
+ }
+ 
+ .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .contact-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+ }
+ 
+ .contact-link {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black; /* Blue color for links */
+    transition: color 0.3s;
+ }
+ 
+ .contact-link:hover {
+    color: #b71c1c; /* Lighter blue on hover */
+ }
+/* Footer Section */
+.footer {
+    background-color: #e8f5e9; /* Soft Green Background */
+    color: #2e7d32; /* Deep Green Text */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
