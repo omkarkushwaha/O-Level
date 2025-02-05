@@ -1,228 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questions</title>
-    <link rel="stylesheet" href="questionweb.css">
-</head>
-<body>
+    <title>Previous Year Questions</title>
     <style>
-        li{
-            font-style: bold;
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e75d5d;
+            margin: 0;
+            padding: 20px;
+            
+        }
+        span{
+            font-weight: bolder;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slide {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .nav-buttons {
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .feedback-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .feedback-form {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            width: 250px;
+        }
+        .feedback-form textarea {
+            width: 100%;
+            height: 80px;
+            resize: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .feedback-form button {
+            background-color: red;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .feedback-form {
+                width: 80%;
+            }
+            .feedback-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+            .nav-buttons button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .feedback-form {
+                width: 90%;
+            }
+            .feedback-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+            .nav-buttons button {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
         }
     </style>
-    <header class="header">
-        <h2>Question for Practical Examination January-2025</h2>
-        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 24 24">
-            <path d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"></path>
-        </svg>Home</a>
-    </header>
-
-    <section>
-        <ol>
-            <li>Create an HTML file (e.g. first_page.html) that specifies a page that contains a heading 
+</head>
+<body>
+    <h1>Sample Questions Web Design and Publishing</h1> <hr> <!-- Heading added here -->
+    
+    <div class="slideshow-container">
+        <div class="slide">
+            <p><span>Q1.</span> an HTML file (e.g. first_page.html) that specifies a page that contains a heading 
                 and two paragraphs of text. As the texts in the heading and paragraphs you can use any 
-                texts you like.</li><br>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="01.Question" src="https://codepen.io/omkarkushwaha/embed/qEWpexo?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                texts you like.</p>
+                <iframe height="450" style="width: 100%;" scrolling="no" title="01.Question" src="https://codepen.io/omkarkushwaha/embed/qEWpexo?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                     See the Pen <a href="https://codepen.io/omkarkushwaha/pen/qEWpexo">
                     01.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                     on <a href="https://codepen.io">CodePen</a>.
                   </iframe>
-            <li> Write a HTML program to design a form which should allow to enter your personal data ( 
-                Hint: make use of text field, password field, e-mail, lists, radio buttons, checkboxes, 
-                submit button)
-                </li><br>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="02.Question" src="https://codepen.io/omkarkushwaha/embed/dPbJxeq?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/dPbJxeq">
-                    02.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-            <li>Write html code to generate following output.
-                <ol><li>Coffee       </li>
+        </div>
+
+        <div class="slide">
+            <p><span>Q2.</span> Write a HTML program to design a form which should allow to enter your personal data ( 
+            Hint: make use of text field, password field, e-mail, lists, radio buttons, checkboxes, 
+            submit button)
+        </p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="02.Question" src="https://codepen.io/omkarkushwaha/embed/dPbJxeq?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/dPbJxeq">
+                02.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+        </div>
+        
+        <div class="slide">
+            <p><span>Q3.</span>Write html code to generate following output.
+                <ol>
+                <li>Coffee </li>
                 <li>Tea</li>
                 <li>Black Tea </li>
                 <li>Green Tea </li>
                 <li>Milk</li></ol>
-            </li><br>
-            <iframe height="300" style="width: 100%;" scrolling="no" title="03.question" src="https://codepen.io/omkarkushwaha/embed/pvzQwqg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            </p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="03.question" src="https://codepen.io/omkarkushwaha/embed/pvzQwqg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                 See the Pen <a href="https://codepen.io/omkarkushwaha/pen/pvzQwqg">
                 03.question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                 on <a href="https://codepen.io">CodePen</a>.
               </iframe>
-            
-            <li> Write HTML Code to demonstrate the use of Anchor Tag for the Following: - <br>
+        </div>
+
+        <div class="slide">
+            <p><span>Q4.</span> Write HTML Code to demonstrate the use of Anchor Tag for the Following: - <br>
                 1. Creating a web link that opens in a new window. <br>
                 2. Creating a web link that opens in the same window. <br>
                 3. C Reference within the same html document. <br>
                 4. Reference to some image. <br>
-                5. Making an image a hyperlink to display second image</li><br>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="04.Question" src="https://codepen.io/omkarkushwaha/embed/QwLJgZW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                5. Making an image a hyperlink to display second image</p>
+                <iframe height="450" style="width: 100%;" scrolling="no" title="04.Question" src="https://codepen.io/omkarkushwaha/embed/QwLJgZW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                     See the Pen <a href="https://codepen.io/omkarkushwaha/pen/QwLJgZW">
                     04.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                     on <a href="https://codepen.io">CodePen</a>.
                   </iframe>
-            <li>Create an html page with following specifications 
+        </div>
+
+        <div class="slide">
+            <p><span>Q5.</span>Create an html page with following specifications 
                 Title should be about my City. Place your City name at the top of the page in large text and 
                 in blue color. Add names of landmarks in your city each in a different color, style and 
                 typeface. One of the landmark, your college name should be blinking. Add scrolling text 
-                with a message of your choice</li><br>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="05.Question" src="https://codepen.io/omkarkushwaha/embed/NPKEgMZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                with a message of your choice</p>
+                <iframe height="450" style="width: 100%;" scrolling="no" title="05.Question" src="https://codepen.io/omkarkushwaha/embed/NPKEgMZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                     See the Pen <a href="https://codepen.io/omkarkushwaha/pen/NPKEgMZ">
                     05.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                     on <a href="https://codepen.io">CodePen</a>.
                   </iframe>
-            <li> Create an html page with 7 separate lines in different colors. State color of each line in its 
-                text.</li><br>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="06.Question" src="https://codepen.io/omkarkushwaha/embed/WbeYOPN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/WbeYOPN">
-                    06.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-            <li> Create an html page containing the polynomial expression as follows:<br>
-                a^0 + a^1x + a^2x^2 + a^3x^3</li><br>
-                    <iframe height="300" style="width: 100%;" scrolling="no" title="07.Question" src="https://codepen.io/omkarkushwaha/embed/ByBGZMe?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                        See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ByBGZMe">
-                        07.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                        on <a href="https://codepen.io">CodePen</a>.
-                      </iframe>
-            <li> Create an html page with red background with a message “warning” in large size blinking. 
-                Add scrolling text “read the message” below it</li><br>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="09.Question" src="https://codepen.io/omkarkushwaha/embed/ogvQeXM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ogvQeXM">
-                    09.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-             <li>Write a HTML page to print Hello world in bold & Italic Form.</li><br/>
-             <iframe height="300" style="width: 100%;" scrolling="no" title="10.Question" src="https://codepen.io/omkarkushwaha/embed/OPLajVK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/OPLajVK">
-                10.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+        </div>
+
+        <div class="slide">
+        <p><span>Q6.</span>Create an html page with 7 separate lines in different colors. State color of each line in its 
+            text.</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="06.Question" src="https://codepen.io/omkarkushwaha/embed/WbeYOPN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/WbeYOPN">
+                06.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                 on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-
-             <li>Design a HTML page to display a picture. The picture should be removed from the screen 
-                after a mouse click on the picture.</li><br/>
-             <iframe height="300" style="width: 100%;" scrolling="no" title="11.Question" src="https://codepen.io/omkarkushwaha/embed/wBwQqGB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/wBwQqGB">
-                11.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+            </iframe></div>
+        <div class="slide">
+            <p><span>Q7.</span> Create an html page containing the polynomial expression as follows:<br>
+            a^0 + a^1x + a^2x^2 + a^3x^3</p>
+                <iframe height="450" style="width: 100%;" scrolling="no" title="07.Question" src="https://codepen.io/omkarkushwaha/embed/ByBGZMe?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ByBGZMe">
+                    07.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe></div>
+        <div class="slide">
+        <p><span>Q8.</span>Create an html page with red background with a message “warning” in large size blinking. 
+            Add scrolling text “read the message” below it</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="09.Question" src="https://codepen.io/omkarkushwaha/embed/ogvQeXM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ogvQeXM">
+                09.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                 on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-
-             <li>Create a HTML Document with JavaScript code that has three Textboxes and a button.The 
-                details should be accepted using textboxes are principal, rate of interest, and duration in 
-                years. When user clicks the OK Button a message box appears showing the simple interest 
-                of principal amount.
-                </li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="12.Question" src="https://codepen.io/omkarkushwaha/embed/qEWQXNy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/qEWQXNy">
-                    12.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>
-                  </iframe>
-
-             <li>Write a HTML Script to insert a hyperlink. Create a hyperlink in html which when clicked 
-                links to www.google.com in a new window.</li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="13.Question" src="https://codepen.io/omkarkushwaha/embed/yyBQoaM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/yyBQoaM">
-                    13.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-
-             <li>Create a HTML file which displays three images at LEFT, RIGHT and CENTER 
-                respectively in the browser.</li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="14.Question" src="https://codepen.io/omkarkushwaha/embed/VYZVzzR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/VYZVzzR">
-                    14.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-
-             <li> Create table with ROWSPAN and COLSPAN attribute of TABLE in HTML(Prepare 
-                timetable of your class). Include CELLSPACING & CELL PADDING.</li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="15.Question" src="https://codepen.io/omkarkushwaha/embed/ZYzmdxb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ZYzmdxb">
-                    15.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-
-             <li> With CSS use the shorthand background property to set background image to eg."xyz.png", 
-                show it once, in the top right corner.</li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="17.Question" src="https://codepen.io/omkarkushwaha/embed/ZYzmdmW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ZYzmdmW">
-                    17.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-
-             <li>Write a program in javascript to generate series of prime numbers.
-            </li><br/>
-            <iframe height="300" style="width: 100%;" scrolling="no" title="18.Question" src="https://codepen.io/omkarkushwaha/embed/WbeYqLV?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/WbeYqLV">
-                18.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+              </iframe></div>
+        <div class="slide">     
+        <p><span>Q9.</span>Write a HTML page to print Hello world in bold & Italic Form.</p>
+         <iframe height="450" style="width: 100%;" scrolling="no" title="10.Question" src="https://codepen.io/omkarkushwaha/embed/OPLajVK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/omkarkushwaha/pen/OPLajVK">
+            10.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe></div>
+        <div class="slide">
+        <p><span>Q10.</span>Design a HTML page to display a picture. The picture should be removed from the screen 
+            after a mouse click on the picture.</p>
+         <iframe height="450" style="width: 100%;" scrolling="no" title="11.Question" src="https://codepen.io/omkarkushwaha/embed/wBwQqGB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/omkarkushwaha/pen/wBwQqGB">
+            11.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe></div>
+        <div class="slide">
+        <p><span>Q11.</span>Create a HTML Document with JavaScript code that has three Textboxes and a button.The 
+            details should be accepted using textboxes are principal, rate of interest, and duration in 
+            years. When user clicks the OK Button a message box appears showing the simple interest 
+            of principal amount.
+            </p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="12.Question" src="https://codepen.io/omkarkushwaha/embed/qEWQXNy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/qEWQXNy">
+                12.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+                on <a href="https://codepen.io">CodePen</a>
+              </iframe></div>
+        <div class="slide">
+        <p><span>Q12.</span>Write a HTML Script to insert a hyperlink. Create a hyperlink in html which when clicked 
+            links to www.google.com in a new window.</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="13.Question" src="https://codepen.io/omkarkushwaha/embed/yyBQoaM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/yyBQoaM">
+                13.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                 on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-
-             <li>`Write a JavaScript program to display the current day and time in the following format. <br>
-                Sample Output: Today is: Tuesday. <br>
-                Current time is: 10 PM: 30:38</li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="19.Question" src="https://codepen.io/omkarkushwaha/embed/vEBQqbr?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/vEBQqbr">
-                    19.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-
-             <li> Write a program to sum and multiply of two numbers using JavaScript.</li><br/>
-             <iframe height="300" style="width: 100%;" scrolling="no" title="20.Question" src="https://codepen.io/omkarkushwaha/embed/QwLJXoL?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/QwLJXoL">
-                20.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+              </iframe></div>
+        <div class="slide">
+        <p><span>Q13.</span>Create a HTML file which displays three images at LEFT, RIGHT and CENTER 
+            respectively in the browser.</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="14.Question" src="https://codepen.io/omkarkushwaha/embed/VYZVzzR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/VYZVzzR">
+                14.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                 on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-
-             <li>Write a program to redirect, popup and print function in JavaScript.</li><br/>
-             <iframe height="300" style="width: 100%;" scrolling="no" title="21.Question" src="https://codepen.io/omkarkushwaha/embed/QwLJXPW?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/QwLJXPW">
-                21.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+              </iframe></div>
+        <div class="slide">
+        <p><span>Q14.</span>Create table with ROWSPAN and COLSPAN attribute of TABLE in HTML(Prepare 
+            timetable of your class). Include CELLSPACING & CELL PADDING.</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="15.Question" src="https://codepen.io/omkarkushwaha/embed/ZYzmdxb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ZYzmdxb">
+                15.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                 on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-            <li>Create your first "Hello world" application in AngularJS.
-            </li><br/>
-            <iframe height="300" style="width: 100%;" scrolling="no" title="22.Question" src="https://codepen.io/omkarkushwaha/embed/EaYGYVG?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/EaYGYVG">
-                22.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+              </iframe></div>
+        <div class="slide">
+        <p><span>Q15.</span>With CSS use the shorthand background property to set background image to eg."xyz.png", 
+            show it once, in the top right corner.</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="17.Question" src="https://codepen.io/omkarkushwaha/embed/ZYzmdmW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/ZYzmdmW">
+                17.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
                 on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-
-            <li>HTML page which has a title of "Event Registration" and has references to important 
-                libraries such as Bootstrap, JQuery and Angular.</li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="23.Question" src="https://codepen.io/omkarkushwaha/embed/mybQZYz?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/mybQZYz">
-                    23.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-
-            <li>Write a code to display the words "AngularJS" in both text format and in a text box when the 
-                page is viewed in the browser.</li><br/>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="24.Question" src="https://codepen.io/omkarkushwaha/embed/qEWQzzp?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/qEWQzzp">
-                    24.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-
-            <li>Create a sample form program that collects the first name, last name, email, user id, password 
-                and confirms password from the user. All the inputs are mandatory and email address entered 
-                should be in correct format. Also, the values entered in the password and confirm password 
-                textboxes should be the same. After validating using JavaScript, in output display proper 
-                error messages in red color just next to the textbox where there is an error.
-                </li><br>
-                <iframe height="300" style="width: 100%;" scrolling="no" title="25.Question" src="https://codepen.io/omkarkushwaha/embed/PwYxrML?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/omkarkushwaha/pen/PwYxrML">
-                    25.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-            
-        </ol>
+              </iframe></div>
+        <div class="slide">
+        <p><span>Q16.</span>Write a program in javascript to generate series of prime numbers.</p>
+        <iframe height="450" style="width: 100%;" scrolling="no" title="18.Question" src="https://codepen.io/omkarkushwaha/embed/WbeYqLV?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/omkarkushwaha/pen/WbeYqLV">
+            18.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe></div>
+        <div class="slide">
+        <p><span>Q17.</span>Write a JavaScript program to display the current day and time in the following format. <br>
+            Sample Output: Today is: Tuesday. <br>
+            Current time is: 10 PM: 30:38</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="19.Question" src="https://codepen.io/omkarkushwaha/embed/vEBQqbr?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/vEBQqbr">
+                19.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe></div>
+        <div class="slide">
+        <p><span>Q18.</span>Write a program to sum and multiply of two numbers using JavaScript.</p>
+         <iframe height="450" style="width: 100%;" scrolling="no" title="20.Question" src="https://codepen.io/omkarkushwaha/embed/QwLJXoL?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/omkarkushwaha/pen/QwLJXoL">
+            20.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe></div>
+        <div class="slide">
+        <p><span>Q19.</span>Write a program to redirect, popup and print function in JavaScript.</p>
+         <iframe height="450" style="width: 100%;" scrolling="no" title="21.Question" src="https://codepen.io/omkarkushwaha/embed/QwLJXPW?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/omkarkushwaha/pen/QwLJXPW">
+            21.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe></div>
+        <div class="slide">
+        <p><span>Q20.</span>Create your first "Hello world" application in AngularJS.
+        </p>
+        <iframe height="450" style="width: 100%;" scrolling="no" title="22.Question" src="https://codepen.io/omkarkushwaha/embed/EaYGYVG?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/omkarkushwaha/pen/EaYGYVG">
+            22.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe></div>
+        <div class="slide">
+        <p><span>Q21.</span>HTML page which has a title of "Event Registration" and has references to important 
+            libraries such as Bootstrap, JQuery and Angular.</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="23.Question" src="https://codepen.io/omkarkushwaha/embed/mybQZYz?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/mybQZYz">
+                23.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe></div>
+        <div class="slide">
+        <p><span>Q22.</span>Write a code to display the words "AngularJS" in both text format and in a text box when the 
+            page is viewed in the browser.</p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="24.Question" src="https://codepen.io/omkarkushwaha/embed/qEWQzzp?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/qEWQzzp">
+                24.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe</div>
+        <div class="slide">
+        <p><span>Q23.</span>Create a sample form program that collects the first name, last name, email, user id, password 
+            and confirms password from the user. All the inputs are mandatory and email address entered 
+            should be in correct format. Also, the values entered in the password and confirm password 
+            textboxes should be the same. After validating using JavaScript, in output display proper 
+            error messages in red color just next to the textbox where there is an error.
+        </p>
+            <iframe height="450" style="width: 100%;" scrolling="no" title="25.Question" src="https://codepen.io/omkarkushwaha/embed/PwYxrML?default-tab=html" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/omkarkushwaha/pen/PwYxrML">
+                25.Question</a> by Omkar Kushwaha (<a href="https://codepen.io/omkarkushwaha">@omkarkushwaha</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe></div>
+       
+    </div>
+    <div class="nav-buttons" id="slide-buttons"></div>
+    
+    <button class="feedback-icon" onclick="toggleFeedbackForm()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg></button>
+    
+    <div class="feedback-form" id="feedbackForm">
+        <h4>Feedback</h4>
+        <textarea id="feedbackText" placeholder="Enter your feedback"></textarea>
+        <button onclick="submitFeedback()">Submit</button>
+    </div>
+    
+    <script>
+        let slides = document.getElementsByClassName("slide");
+        let slideButtons = document.getElementById("slide-buttons");
         
-    </section>
+        function showSlide(index) {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[index].style.display = "block";
+        }
 
-    <footer class="footer">
-        <p>&copy; 2024 OMKAR KUSHWAHA . All Rights Reserved.</p>
-    </footer>
+        function createSlideButtons() {
+            for (let i = 0; i < slides.length; i++) {
+                let button = document.createElement("button");
+                button.innerText = i + 1;
+                button.onclick = function () { showSlide(i); };
+                slideButtons.appendChild(button);
+            }
+        }
+
+        function toggleFeedbackForm() {
+            let form = document.getElementById("feedbackForm");
+            form.style.display = form.style.display === "block" ? "none" : "block";
+        }
+
+        function submitFeedback() {
+            let feedback = document.getElementById("feedbackText").value;
+            if (feedback.trim() !== "") {
+                let phoneNumber = "+918009716182"; // Your WhatsApp number
+                let message = encodeURIComponent(feedback);
+                let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+                window.open(whatsappURL, "_blank"); // Open WhatsApp chat in a new tab
+                document.getElementById("feedbackText").value = "";
+                document.getElementById("feedbackForm").style.display = "none";
+            } else {
+                alert("Please enter some feedback.");
+            }
+        }
+
+        createSlideButtons();
+        showSlide(0);
+    </script>
 </body>
 </html>
