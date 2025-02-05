@@ -1,209 +1,357 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Previous Year Questions</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #e75d5d;
-      margin: 0px;
-      padding: 20px;
-    }
-    .table-container {
-      width: 100%;
-      margin: 2px auto;
-      background-color: rgb(228, 201, 201);
-      padding: 20px;
-      border-radius: 8px;
-    }
-   h1, span{
-        font-weight: bold;
-   }
-   .heading{
-    font-weight: bold;
-   }
-  </style>
+    <title>Previous Year Questions</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e75d5d;
+            margin: 0;
+            padding: 20px;
+            
+        }
+        span{
+            font-weight: bolder;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slide {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .nav-buttons {
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .feedback-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .feedback-form {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            width: 250px;
+        }
+        .feedback-form textarea {
+            width: 100%;
+            height: 80px;
+            resize: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .feedback-form button {
+            background-color: red;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .feedback-form {
+                width: 80%;
+            }
+            .feedback-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+            .nav-buttons button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .feedback-form {
+                width: 90%;
+            }
+            .feedback-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+            .nav-buttons button {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="table-container">
-<h1 style="text-align:center">Previous Year Questions</h1>
-</div>
-
-                                                  <!-- 1 -->
+    <h1>Previous Year Questions</h1><hr> <!-- Heading added here -->
+    
+    <div class="slideshow-container">
+                                                     <!-- 1 -->
   
-<div class="table-container">
-<details>
-    <summary>Write a program to Blink default Light Emitting Diode(LED) on Arduino board with the delay of 2 sec.</summary>
+<div class="slide">
+    <p><span>Q1.</span>Write a program to Blink default Light Emitting Diode(LED) on Arduino board with the delay of 2 sec.</p>
     <hr>
-    <ol>
-        <li>
-            <p class="heading">Component Required</p>
-            <p>You only need the following components: </p>
-            <p><span>1.</span><span>Arduino Board: </span>(e.g., Arduino Uno)</p>
-            <p><span>2.</span><span>USB Cable : </span>To connect the Arduino to your computer.</p>
-            <p>The built-in LED on the Arduino board is internally connected to a specific pin (typically pin 13 on most boards). No external components are required unless you want to connect an external LED.</p>
-        </li>
-        <li>
-            <p class="heading">Circuit Connection</p>
-            <p><span>.</span><span>For Buit-In LED:</span>No additional wiring is required; the built-in LED is already connected to a specific pin on the Arduino board (usually pin 13).</p>
-        </li>
-        <li>
-            <p class="heading">Code</p>
-            <img src="previousiot/1.1.png" alt="Arduino Uno"><br>
-            <img src="previousiot/1.2.png" alt="Code">
-        </li>
-    </ol>
-    <button style="margin-left: 50%; background-color: red;"><a href="http://" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white">Preview</a></button>
-</details>
+     <img src="previousiot/1.2.png" alt="Code" width="100%" height="450px">
 </div>
 
                                                    <!--  2  -->
   
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface DHT sensor with LED. The program will switch on LED once the temperature rise above 30 degrees.</summary><hr>
-        <iframe src="https://wokwi.com/projects/421709522509302785" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface DHT sensor with LED. The program will switch on LED once the temperature rise above 30 degrees.</p><hr>
+        <iframe src="https://wokwi.com/projects/421709522509302785" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                         <!--   3 -->
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface buzzer and LED, whenever the button is pressed the buzzer give beep for 100ms and LED status is toggled.</summary><hr>
-        <iframe src="https://wokwi.com/projects/421712765324253185" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface buzzer and LED, whenever the button is pressed the buzzer give beep for 100ms and LED status is toggled.</p><hr>
+        <iframe src="https://wokwi.com/projects/421712765324253185" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                               <!--   4 -->
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface buzzer with arduino board to buzz on/off with delay of 2 sec.</summary><hr>
-        <iframe src="https://wokwi.com/projects/421766636233193473" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface buzzer with arduino board to buzz on/off with delay of 2 sec.</p><hr>
+        <iframe src="https://wokwi.com/projects/421766636233193473" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                             <!--   5 -->
-<div class="table-container">
-      <details>
-        <summary>Write a program to control an LED using a Light Dependent Resistor (LDR). Provide the necessary circuit diagram and write the Arduino code. Explain how the LDR works in this setup and how the threshold value is determined for switching the LED on or off.</summary><hr>
-         <iframe src="https://wokwi.com/projects/421768962959624193" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to control an LED using a Light Dependent Resistor (LDR). Provide the necessary circuit diagram and write the Arduino code. Explain how the LDR works in this setup and how the threshold value is determined for switching the LED on or off.</p><hr>
+         <iframe src="https://wokwi.com/projects/421768962959624193" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                             <!--   6 -->
-<div class="table-container">
-      <details>
-        <summary>Write a program to run a LED for 2 secs after every 3secs.</summary><hr>
-         <iframe src="https://wokwi.com/projects/421769522046811137" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to run a LED for 2 secs after every 3secs.</p><hr>
+         <iframe src="https://wokwi.com/projects/421769522046811137" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                                     <!--   7 -->
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface LEDs at pins 10, 11, 12, 13 and buttons at pins 7, 8. When the button at pin 7 (increment button) is pressed for the first time, the LED at pin 10 is switched on. When the button is pressed a second time, the LED at pin 11 is switched on. Similarly, when the button at pin 8 (decrement button) is pressed, the LEDs are switched off sequentially.</summary><hr>
-         <iframe src="https://wokwi.com/projects/421771608101968897" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface LEDs at pins 10, 11, 12, 13 and buttons at pins 7, 8. When the button at pin 7 (increment button) is pressed for the first time, the LED at pin 10 is switched on. When the button is pressed a second time, the LED at pin 11 is switched on. Similarly, when the button at pin 8 (decrement button) is pressed, the LEDs are switched off sequentially.</p><hr>
+         <iframe src="https://wokwi.com/projects/421771608101968897" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                                     <!--   8 -->
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface DHT temperature sensor and a DC motor to exhibit a real life situation that whenever temperature rises above a particular value the DC motor fan starts and when temperature falls below a value, the motor stops.</summary><hr>
-        <iframe src="https://wokwi.com/projects/421774797618805761" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface DHT temperature sensor and a DC motor to exhibit a real life situation that whenever temperature rises above a particular value the DC motor fan starts and when temperature falls below a value, the motor stops.</p><hr>
+        <iframe src="https://wokwi.com/projects/421774797618805761" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                                   <!--   9 -->
-<div class="table-container">
-      <details>
-        <summary>Write a sketch that blinks a single LED at a rate of 500ms on and 500ms off for 10 cycles, then continue to decrease at this same rate and pattern until it reaches 2 or then repeats starting from 500ms.</summary><hr>
-        <iframe src="https://wokwi.com/projects/421776601871133697" frameborder="1" width="100%" height="500px"></iframe>
-      </details>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a sketch that blinks a single LED at a rate of 500ms on and 500ms off for 10 cycles, then continue to decrease at this same rate and pattern until it reaches 2 or then repeats starting from 500ms.</p><hr>
+        <iframe src="https://wokwi.com/projects/421776601871133697" frameborder="1" width="100%" height="450px"></iframe>
+      
 </div>
 
                                               <!--   10 -->
-<div class="table-container">
-      <details>
-        <summary>Sense the LDR value and print it both on the LCD and serial monitor.</summary><hr>
-        <iframe width="100%" height="500px" src="https://www.tinkercad.com/embed/hfZIRrt1hua?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<div class="slide">
+      
+        <p><span>Q1.</span>Sense the LDR value and print it both on the LCD and serial monitor.</p><hr>
+        <iframe width="100%" height="450px" src="https://www.tinkercad.com/embed/hfZIRrt1hua?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 <!--         <img src="previousiot/2.png" alt="Code" width=100% height="auto"> -->
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>Sense the air index value from the MQ135 and print its value on the LCD.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>Sense the air index value from the MQ135 and print its value on the LCD.</p><hr>
 <!--         <img src="previousiot/3.png" alt="Code" width=100% height="auto"> -->
-        <iframe width="100%" height="500px" src="https://www.tinkercad.com/embed/41RzeAST57v?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-      </details>
+        <iframe width="100%" height="450px" src="https://www.tinkercad.com/embed/41RzeAST57v?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>Print "hello world" on the serial monitor when the Arduino receives the message "hello world".</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>Print "hello world" on the serial monitor when the Arduino receives the message "hello world".</p><hr>
         <img src="previousiot/4.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>To interface a temperature sensor (LM35) with an Arduino and display the temperature data on an LCD.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>To interface a temperature sensor (LM35) with an Arduino and display the temperature data on an LCD.</p><hr>
         <img src="previousiot/5.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>Control a 220V lamp using a relay module connected to an Arduino.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>Control a 220V lamp using a relay module connected to an Arduino.</p><hr>
         <img src="previousiot/6.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>Write a program to measure the pollution level in a particular environment using the MQ135 sensor and display its value on the LCD.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to measure the pollution level in a particular environment using the MQ135 sensor and display its value on the LCD.</p><hr>
         <img src="previousiot/7.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface an LCD display with a sensor circuit.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface an LCD display with a sensor circuit.</p><hr>
         <img src="previousiot/8.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary> Write a program to interface an LCD and keypad with an Arduino board, and display the key pressed from the keypad on the LCD.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span> Write a program to interface an LCD and keypad with an Arduino board, and display the key pressed from the keypad on the LCD.</p><hr>
         <img src="previousiot/9.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface LEDs at two PWM pins and exhibit LED fading using an Arduino.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface LEDs at two PWM pins and exhibit LED fading using an Arduino.</p><hr>
         <img src="previousiot/10.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<div class="table-container">
-      <details>
-        <summary>Write a program to interface an LDR  with an Arduino and display the values read on the Serial Monitor with a delay of 2 seconds.</summary><hr>
+<div class="slide">
+      
+        <p><span>Q1.</span>Write a program to interface an LDR  with an Arduino and display the values read on the Serial Monitor with a delay of 2 seconds.</p><hr>
         <img src="previousiot/11.png" alt="Code" width=100% height="auto">
-      </details>
+      
 </div>
-<!-- <div class="table-container">
-      <details>
-        <summary>Write a program to design a night lamp using a photodiode and an LED with an Arduino Uno and to measure the time delays associated with keeping the lamp on.</summary><hr>
+<!-- <div class="slide">
+      
+        <p><span>Q1.</span>Write a program to design a night lamp using a photodiode and an LED with an Arduino Uno and to measure the time delays associated with keeping the lamp on.</p><hr>
         
-      </details>
+      
 </div> -->
 
-<!-- <div class="table-container">
-      <details>
-        <summary></summary><hr>
+<!-- <div class="slide">
+      
+        <p><span>Q1.</span></p><hr>
         
-      </details>
+      
 </div> -->
   
-<div class="table-container">
+<div class="slide">
       
         <marquee style="color:red; font-weight:bold;">Remainig Question Will Uploaded Soon....</marquee>
      
 </div>
+
+       
+    </div>
+<div class="nav-buttons" id="slide-buttons"></div>
+
+<button class="feedback-icon" onclick="toggleFeedbackForm()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg></button>
+
+<div class="feedback-form" id="feedbackForm">
+    <h4>Feedback</h4>
+    <input type="text" id="userName" placeholder="Enter your name"  required/>
+    <textarea id="feedbackText" placeholder="Enter your feedback"></textarea>
+    <button onclick="submitFeedback()">Submit</button>
+</div>
+
+<script>
+    let slides = document.getElementsByClassName("slide");
+    let slideButtons = document.getElementById("slide-buttons");
+
+    function showSlide(index) {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[index].style.display = "block";
+    }
+
+    function createSlideButtons() {
+        for (let i = 0; i < slides.length; i++) {
+            let button = document.createElement("button");
+            button.innerText = i + 1;
+            button.onclick = function () { showSlide(i); };
+            slideButtons.appendChild(button);
+        }
+    }
+
+    function toggleFeedbackForm() {
+        let form = document.getElementById("feedbackForm");
+        form.style.display = form.style.display === "block" ? "none" : "block";
+    }
+
+    function submitFeedback() {
+        let name = document.getElementById("userName").value.trim();
+        let feedback = document.getElementById("feedbackText").value.trim();
+
+        if (name === "" || feedback === "") {
+            alert("Please enter your name and feedback.");
+            return;
+        }
+
+        let phoneNumber = "+918009716182"; // Your WhatsApp number
+        let message = encodeURIComponent(`Feedback from ${name}: ${feedback}`);
+        let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+        
+        window.open(whatsappURL, "_blank"); // Open WhatsApp chat in a new tab
+        
+        document.getElementById("userName").value = "";
+        document.getElementById("feedbackText").value = "";
+        document.getElementById("feedbackForm").style.display = "none";
+    }
+
+    createSlideButtons();
+    showSlide(0);
+</script>
 
 </body>
 </html>
